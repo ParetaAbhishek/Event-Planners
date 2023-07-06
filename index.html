@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>abc planner</title>
+  <link rel="icon" href="./logo.png">
+  <link rel="icon" href="/images/favicon-enhanced.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="/images/favicon-enhanced.png" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .back-top-wrap {
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    background-color: #80F7D1;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    z-index: 100;
+  }
+
+  .back-top-wrap:hover {
+    background-color: #00a2ff;
+    color: #80F7D1;
+  }
+
+  .back-top-wrap:hover .fas.fa-arrow-up {
+    color: white;
+  }
+
+  .fas.fa-arrow-up {
+    color: #00488F;
+    transition: 0.3s ease-in-out;
+  }
+</style>
+
+<body onload="myFunction()">
+  <div class="loading-wrapper">
+    <img src="#" id="loading" />
+  </div>
+
+  <!-- Back to top button -->
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+
+  <header>
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!"> <img src="#" alt="Logo" class="logo" /></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+	        <li><a href="#Wedding">Wediing</a></li>
+          <li><a href="Other Celebration">Other Celebration</a></li>
+          <li><a href="#Our BallRooms">Our BallRooms </a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="html/contact.html">CONTACT US </a></li>
+        </ul>
+      </div>
+      <button class="login-button"><a href="#">Request Pricing</a></button>
+      <div class="hamburger" id="ham">
+        <i class="cancel fa-solid fa-xmark"></i>
+
+        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+          <li><a href="#">HOME</a></li>
+	        <li><a href="#Wedding">Wediing</a></li>
+          <li><a href="Other Celebration">Other Celebration</a></li>
+          <li><a href="#Our BallRooms">Our BallRooms </a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="html/contact.html">CONTACT US </a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Welcome to abc Planners</h1>
+      <div class="container">
+        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typed = new Typed(".auto-type", {
+          strings: ["Maecenas habitasse penatibus laoreet et metus leo venenatis netus consectetur. Praesent orci luctus sollicitudin. Sociis ornare sem laoreet sed magna praesent."],
+          typeSpeed: 35,
+          backspeed: 10,
+          loop: true
+        })
+      </script>
+      <a href="#" class="rainbow-button" alt="Find Dtaes"></a>
+    </div>
+
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1 data-aos="flip-right">About Us</h1>
+    <div class="max-width">
+      <div data-aos="zoom-in" class="photo"><img src="#" alt="" height="300px" width="330px"></div>
+      <div class="about-content">
+        <p data-aos="fade-left" class="text-1"> Maecenas habitasse penatibus laoreet et metus leo venenatis netus consectetur. Praesent orci luctus sollicitudin. Sociis ornare sem laoreet sed magna praesent <span>one destination</span>for events </p>
+        <p data-aos="fade-left" class="text-3">We hope that everyone can  <span>enjoy </span>thier happy moments
+          <span> abc planners</span></p>
+      </div>
+    </div>
+<!-- Package Section -->
+<h1 style="color: rgb(216, 245, 255);">Our Package</h1>
+     
+<div class="box">
+      
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="#" alt="work1" loading="lazy">
+        <h5>Wedding Package</h5>
+        <div class="pra">
+  
+          <a href="#"><button>Know more</button></a>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="#" alt="Work 2" loading="lazy">
+        <h5>birthday Package</h5>
+        <div class="pra">
+          
+          <a href="#"><button>Know More</button></a>
+        </div>
+      </div>
+     
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="#" alt="#" loading="lazy">
+        <h5>OtherPackage</h5>
+        <div class="pra">
+          
+          <a href="#"><button>Know More</button></a>
+        </div>
+      </div>      
+</div>
+
+<!--Gallery Section-->
+<h1 style="color: rgb(216, 245, 255);">Gallery</h1>
+     
+<div class="box">
+      
+      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
+        <img src="#" alt="work1" loading="lazy">
+        <h5>PIcture 1</h5>
+        <div class="pra">
+  
+          <a href="#"><button>See more</button></a>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="#" alt="Work 2" loading="lazy">
+        <h5>PIcture 2</h5>
+        <div class="pra">
+          
+          <a href="#"><button>See More</button></a>
+        </div>
+      </div>
+     
+      <div data-aos="fade-up" data-aos-duration="800" class="card">
+        <img src="#" alt="#" loading="lazy">
+        <h5>PIcture 3</h5>
+        <div class="pra">
+          
+          <a href="#"><button>See More</button></a>
+        </div>
+      </div>
+
+
+      
+</div>
+
+    </div>
+</section>
+
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <h1>Our Services</h1>
+    <div data-aos="zoom-in" data-aos-duration="800" class="container">
+      <div class="responsive audio">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Service 1</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, molestias 
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 4</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 5</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 6</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 7</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 8</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="800" class="responsive reading">
+        <div class="round-image">
+          <img src="#" alt="#" loading="lazy" />
+        </div>
+        <div class="description">
+          <h2>Sevice 9</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a href="#">
+            Let's Explore
+          </a>
+        </div>
+      </div>
+     
+     
+    </div>
+  </section>
+
+ 
+  <!-- Testimonials Section -->
+  <section id="testimonial" class="section-100">
+    <div class="testimonials_heading">
+      <h1>Praises</h1>
+    </div>
+    <div class="testimonial-view">
+      <div class="owl-carousel">
+        <div class="testimonial-box">
+
+          <figure class="testimonal-Card">
+            <blockquote> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempora maiores ipsam corrupti nemo adipisci, minus ad repellendus saepe aliquam.
+              <div class="arrow"></div>
+            </blockquote>
+            <img src="#" alt="#" />
+            <div class="author">
+              <h5>Person 1</h5>
+            </div>
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card hover">
+            <blockquote> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum vitae ab iste nesciunt facilis.<div class="arrow"></div>
+            </blockquote>
+            <img src="#" alt="#" />
+            <div class="author">
+              <h5>Person 2</h5>
+            </div>
+          </figure>
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card">
+            <blockquote> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum vitae ab iste nesciunt facilis.<div class="arrow"></div>
+            </blockquote>
+            <img src="#" alt="#" />
+            <div class="author">
+              <h5>Person 3</h5>
+            </div>
+          </figure>
+
+        </div>
+        <div class="testimonial-box">
+          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
+          <figure class="testimonal-Card">
+            <blockquote> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, voluptatum vitae ab iste nesciunt facilis.<div class="arrow"></div>
+            </blockquote>
+            <img src="#" alt="#" />
+            <div class="author">
+              <h5>Person 4</h5>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+ <!-- footer start -->
+ <footer>
+  <div class="footer-container">
+    <!--logo and info column-->
+    <div class="col">
+      <!--logo insert-->
+      <img src="#" alt="logo" class="footlogo" />
+      <div class="footercontent">
+        <h2>ABC planners</h2>
+        <p class="footerpara">Plan Your Happy Moments</p>
+      </div>
+    </div>
+
+    <!--ADDRESS COLUMN-->
+
+    <div class="footer-side-col">
+      <div class="col">
+        <h3>
+          ADDRESS
+          <div class="underline"><span></span></div>
+        </h3>
+        <p>Rajasthan,India</p>
+        <p class="email-id"><a href="mailto:#">abcplanners@gmail.com</a></p>
+      </div>
+      <!--HOME COLUMN-->
+      <div class="col">
+        <h3>HOME</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#Collabration">Collabration</a></li>
+          <li><a href="#Packages">Packages</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <!--OUR SERVICES COLUMN-->
+      <div class="col">
+        <h3>
+          SERVICES
+          <div class="underline"><span></span></div>
+        </h3>
+        <ul>
+          <li>
+            <a href="#">Service 1</a>
+          </li>
+          <li>
+            <a href="#">Service 2</a>
+          </li>
+          <li>
+            <a href="#">Service 3</a>
+          </li>
+          <li>
+            <a href="#">Service 4</a>
+          </li>
+          <li>
+            <a href="#">Service 5</a>
+          </li>
+          <li>
+            <a href="#">Service 6</a>
+          </li>
+        </ul>
+      </div>
+      <!--CONTACTS COLUMN-->
+      <div class="col">
+        <h3>
+          CONTACTS
+          <div class="underline"><span></span></div>
+        </h3>
+        <div class="social-menu">
+          <ul>
+            <a href="#" target="_blank">
+              <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+            </a>
+            <a href="#" target="_blank">
+              <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+            </a>
+            <a href="#" target="_blank">
+              <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+
+    let preloader = document.querySelector(".loading-wrapper");
+    function myFunction() {
+      preloader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    let navbar = document.querySelector("#nav");
+    let navmenu = document.querySelector("#navmenu");
+
+    window.onscroll = function () {
+      if (window.pageYOffset >= navmenu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    };
+
+    window.onscroll = () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('nav-active');
+      } else {
+        navbar.classList.remove('nav-active');
+      }
+    };
+  </script>
+  
+  <script src="js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
